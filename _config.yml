@@ -1,1 +1,1 @@
-exclude: ['.editorconfig', '.gitignore', 'LICENSE.md', 'README.md', 'package.json', 'node_modules', 'src']
+exclude: ['.editorconfig', '.gitignore', 'LICENSE.md', 'README.md', 'package.json', 'node_modules', 'src', 'CNAME']
