@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("livethemoment sherlock")}();
+!function(){"use strict"}();
