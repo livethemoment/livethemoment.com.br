@@ -53,7 +53,8 @@
       "browser"
     ],
     "rules": {
-      "linebreak-style": 0
+      "linebreak-style": 0, 
+      "unicorn/no-abusive-eslint-disable": 0
     },
     "space": true,
     "semicolon": false
