@@ -52,6 +52,9 @@
     "envs": [
       "browser"
     ],
+    "rules": {
+      "linebreak-style": 0
+    },
     "space": true,
     "semicolon": false
   }
