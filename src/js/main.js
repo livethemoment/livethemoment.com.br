@@ -7,3 +7,18 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-91765285-1', 'auto')
 ga('send', 'pageview')
 /* eslint-enable  */
+
+const menu = document.querySelector('.js-menu-offcanvas')
+const button = document.querySelector('.js-button-offcanvas')
+const overlay = document.querySelector('.js-overlay-offcanvas')
+
+button.addEventListener('click', e => {
+  console.log(e)
+  menu.classList.add('is-open')
+  overlay.classList.add('is-open')
+})
+overlay.addEventListener('click', e => {
+  console.log(e)
+  menu.classList.remove('is-open')
+  overlay.classList.remove('is-open')
+})
