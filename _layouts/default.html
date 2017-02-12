@@ -10,7 +10,7 @@ layout: default
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Live the moment</title>
     <meta name="theme-color" content="#01579B">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
@@ -18,9 +18,11 @@ layout: default
   <body>
     {% include svg-icons.html %}
     <div class="wrapper">
-      <header>
+      <header class="header">
         <nav class="menu-offcanvas">
-          <button class="menu-offcanvas__icon js-button-offcanvas">Menu<span class="menu-offcanvas__icon-bar"></span></button>
+          <button class="menu-offcanvas__icon js-button-offcanvas header__menu">
+            Menu<span class="menu-offcanvas__icon-bar"></span>
+          </button>
           <div class="menu-offcanvas__overlay js-overlay-offcanvas"></div>
           <ul class="menu-offcanvas__list js-menu-offcanvas">
             <li class="menu-offcanvas__item">
@@ -43,12 +45,21 @@ layout: default
             </li>
           </ul>
         </nav>
-        <h1>
-          Live the moment
+        <h1 class="header__title">
+          <a href="/" title="Live the moment - Página Inicial">
+            Live the moment
+          </a>
         </h1>
+        <button>
+          <svg class="header__search">
+            <use xlink:href="#search"></use>
+          </svg>
+        </button>
       </header>
     	<main>
-      	{{ content }}
+        <article>
+      	  {{ content }}
+        </article>
     	</main>
     </div>
 
