@@ -1,84 +1,87 @@
 .menu-offcanvas
-	height 2rem
+  height 2rem
 
-	&__icon
-		color rgba(0,0,0,0)
-		height 2rem
-		position relative
-		user-select none
-		width 3rem
+  &__icon
+    color rgba(0,0,0,0)
+    height 2rem
+    position relative
+    user-select none
+    width 3rem
 
-		&-bar
-		&:before
-		&:after
-			shadow-2dp()
-			background-color $light-text-color-primary
-			display block
-			height .3rem
-			left 0
-			position absolute
-			right 0
+    &-bar
+    &:before
+    &:after
+      shadow-2dp()
+      background-color $light-text-color-primary
+      display block
+      height .3rem
+      left 0
+      position absolute
+      right 0
 
-		&-bar
-			top 50%
-			transform translateY(-50%)
+    &-bar
+      top 50%
+      transform translateY(-50%)
 
-		&:after
-		&:before
-			content ''
+    &:after
+    &:before
+      content ''
 
-		&:before
-			top 0
+    &:before
+      top 0
 
-		&:after
-			bottom 0
+    &:after
+      bottom 0
 
-		&:hover
-		&:focus
+    &:hover
+    &:focus
 
-			& ^[-1]-bar
-			&:before
-			&:after
-				focus-shadow()
+      & ^[-1]-bar
+      &:before
+      &:after
+        focus-shadow()
 
-	&__list
-		shadow-2dp()
-		background-color $brand-color-lighter
-		bottom 0
-		left 0
-		list-style none
-		overflow-y auto
-		position fixed
-		top 0
-		transform translateX(-100%)
-		transition transform .2s ease-out
-		width 26rem
-		will-change transform
-		z-index 1
+  &__list
+    shadow-2dp()
+    background-color $brand-color-lighter
+    bottom 0
+    left 0
+    list-style none
+    overflow-y auto
+    position fixed
+    top 0
+    transform translateX(-100%)
+    transition transform .2s ease-out
+    width 26rem
+    will-change transform
+    z-index 1
 
-		&.is-open
-			transform translateX(0)
+    &.is-open
+      transform translateX(0)
 
-	&__item
-		font-weight 700
-		padding 2rem
+  &__item
+    font-weight 700
+    padding 2rem
 
-		&:first-child
-			border-bottom 1px solid $brand-color
-			font-family 'Over the Rainbow', cursive
+    &:first-child
+      border-bottom 1px solid $brand-color
+      font-family 'Over the Rainbow', cursive
 
-	&__overlay
-		background-color rgba(0,0,0,.5)
-		bottom 0
-		left 0
-		opacity 0
-		position fixed
-		right 0
-		top 0
-		transition opacity .4s ease-out
-		visibility hidden
-		will-change opacity
+    &:not(:first-child)
+      color $light-text-color-secondary
 
-		&.is-open
-			opacity 1
-			visibility visible
+  &__overlay
+    background-color rgba(0,0,0,.5)
+    bottom 0
+    left 0
+    opacity 0
+    position fixed
+    right 0
+    top 0
+    transition opacity .4s ease-out
+    visibility hidden
+    will-change opacity
+
+    &.is-open
+      opacity 1
+      visibility visible

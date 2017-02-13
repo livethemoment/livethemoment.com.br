@@ -18,44 +18,7 @@ layout: default
   <body>
     {% include svg-icons.html %}
     <div class="wrapper">
-      <header class="header">
-        <nav class="menu-offcanvas">
-          <button class="menu-offcanvas__icon js-button-offcanvas header__menu">
-            Menu<span class="menu-offcanvas__icon-bar"></span>
-          </button>
-          <div class="menu-offcanvas__overlay js-overlay-offcanvas"></div>
-          <ul class="menu-offcanvas__list js-menu-offcanvas">
-            <li class="menu-offcanvas__item">
-              Live the moment
-            </li>
-            <li class="menu-offcanvas__item">
-              <button>Decoração</button>
-            </li>
-            <li class="menu-offcanvas__item">
-              <button>Viagens</button>
-            </li>
-            <li class="menu-offcanvas__item">
-              <button>Entretenimento</button>
-            </li>
-            <li class="menu-offcanvas__item">
-              <button>Economia</button>
-            </li>
-            <li class="menu-offcanvas__item">
-              <button>Tutoriais</button>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="header__title">
-          <a href="/" title="Live the moment - Página Inicial">
-            Live the moment
-          </a>
-        </h1>
-        <button>
-          <svg class="header__search">
-            <use xlink:href="#search"></use>
-          </svg>
-        </button>
-      </header>
+      {% include header.html %}
     	<main>
         <article>
       	  {{ content }}
