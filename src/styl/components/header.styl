@@ -12,6 +12,19 @@
     padding 2.5rem
 
   &__title
-    color $light-text-color-primary
-    font-family 'Over the Rainbow', cursive
-    font-size 1.8rem
+    font-size 0
+    overflow hidden
+
+    &:hover
+    &:focus
+      &:before
+        color $accent-color-light
+
+    &:before
+      color $light-text-color-primary
+      content 'LM'
+      font-family 'Over the Rainbow', cursive
+      font-size 1.8rem
+
+      @media (min-width: 600px)
+        content 'Live the moment'
