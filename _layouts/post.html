@@ -1,13 +1,12 @@
 ---
-layout: home
+layout: post
 ---
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-  	<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="theme-color" content="#01579B">
 
@@ -19,11 +18,13 @@ layout: home
     {% include svg-icons.html %}
     <div class="wrapper">
       {% include header.html %}
-    	<main>
+      <main>
         <article>
-      	  {{ content }}
+          <a href="/{{page.categories}}" title="Veja a categoria de {{page.categories}}">{{ page.categories }}</a> >
+          <h1>{{ page.title }}</h1>
+          {{ content }}
         </article>
-    	</main>
+      </main>
     </div>
 
     <script src="/assets/js/main.js"></script>
