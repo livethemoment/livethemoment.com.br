@@ -1,1 +1,3 @@
+permalink: /:categories/:title/
+title: "Live the moment"
 exclude: ['.editorconfig', '.gitignore', 'LICENSE.md', 'README.md', 'package.json', 'node_modules', 'src', 'CNAME']
