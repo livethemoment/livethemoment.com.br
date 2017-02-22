@@ -35,7 +35,7 @@
     "prepush": "npm run precommit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:jekyll": "jekyll build",
-    "watch:jekyll": "chokidar \"./*.md\" \"_includes/*.html\" \"_layouts/*.html\" \"_posts/*.md\" \"assets/**/*\" -c \"npm run build:jekyll\"",
+    "watch:jekyll": "chokidar \"./*.md\" \"_includes/*.html\" \"_layouts/*.html\" \"_posts/*.md\" \"assets/**/*\" \"_categories/**/*\" -c \"npm run build:jekyll\"",
     "build:styl": "stylus -c -u poststylus --with \"['autoprefixer', 'css-mqpacker']\" src/styl/main.styl -o assets/css",
     "lint:styl": "stylint ./src/styl/ -c ./src/.stylintrc",
     "watch:styl": "npm run build:styl -- -w",
@@ -53,7 +53,7 @@
       "browser"
     ],
     "rules": {
-      "linebreak-style": 0, 
+      "linebreak-style": 0,
       "unicorn/no-abusive-eslint-disable": 0
     },
     "space": true,

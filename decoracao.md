@@ -1,0 +1,4 @@
+---
+title: 'Decoração'
+layout: home
+---

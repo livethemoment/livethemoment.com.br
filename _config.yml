@@ -1,3 +1,13 @@
-permalink: /:categories/:title/
+permalink: /:title/
 title: "Live the moment"
 exclude: ['.editorconfig', '.gitignore', 'LICENSE.md', 'README.md', 'package.json', 'node_modules', 'src', 'CNAME']
+
+blog-categories:
+  - title: 'Decoração'
+    url: /decoracao
+  - title: 'Entretenimento'
+    url: /entretenimento
+  - title: 'Tutoriais'
+    url: /tutoriais
+  - title: 'Viagem'
+    url: /viagem
