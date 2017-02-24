@@ -9,9 +9,13 @@ layout: post
     <div class="wrapper">
       {% include header.html %}
       <main>
-        <article>
-          <a href="/{{page.categories}}" title="Veja a categoria de {{page.categories}}">{{ page.categories }}</a> >
-          <h1>{{ page.title }}</h1>
+        <article class="article">
+          <header>
+            <a href="/{{page.categories}}" title="Veja a categoria de {{page.categories}}" class="article__title">{{ page.categories[0] | capitalize }}</a>
+            <span class="article__title">></span>
+            <h1 class="article__title">{{ page.title }}</h1>
+            <p class="article__description">{{ page.description }}</p>
+          </header>
           {{ content }}
         </article>
       </main>

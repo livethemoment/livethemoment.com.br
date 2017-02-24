@@ -1,5 +1,6 @@
 permalink: /:title/
 title: "Live the moment"
+description: "description"
 exclude: ['.editorconfig', '.gitignore', 'LICENSE.md', 'README.md', 'package.json', 'node_modules', 'src', 'CNAME']
 
 blog-categories:

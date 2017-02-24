@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 categories:
   - viagem
-description: "Breve descrição"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta ligula sed ligula consectetur, et sollicitudin nullam"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at molestie nisl. Morbi mollis arcu malesuada bibendum euismod. Pellentesque dignissim dui quis ornare elementum. Aliquam ultrices elementum vestibulum. Fusce eu gravida sem. Etiam ut lorem mattis, tincidunt dolor nec, blandit augue. Maecenas a nunc nisi. Morbi nunc dui, blandit eget erat vel, placerat porttitor mauris. Nunc tempor lobortis nisi, eu sodales nibh cursus vitae. Phasellus vel tortor quam. Aliquam erat volutpat. Phasellus laoreet fermentum suscipit. Fusce eleifend nulla volutpat tellus pretium volutpat. Phasellus lacinia venenatis erat, ac eleifend tortor imperdiet nec. Ut lacinia dui dignissim, rutrum arcu sit amet, pharetra mauris. Cras eu est nec dolor dictum lobortis vel in lectus.
