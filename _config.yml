@@ -12,3 +12,6 @@ blog-categories:
     url: /tutoriais
   - title: 'Viagem'
     url: /viagem
+
+disqus_username: livethemoment
+url: 'http://livethemoment.com.br'

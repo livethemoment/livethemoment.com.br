@@ -15,3 +15,13 @@ const button = document.querySelector('.js-button-offcanvas')
 const overlay = document.querySelector('.js-overlay-offcanvas')
 
 menuOffcanvas({menu, button, overlay})
+
+const loadDisqus = userName => {
+  const script = document.createElement('script')
+  script.src = `//${userName}.disqus.com/embed.js`
+  script.async = true
+
+  document.body.appendChild(script)
+}
+
+loadDisqus(window.disqusUsername)
