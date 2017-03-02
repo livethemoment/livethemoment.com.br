@@ -16,12 +16,49 @@ const overlay = document.querySelector('.js-overlay-offcanvas')
 
 menuOffcanvas({menu, button, overlay})
 
-const loadDisqus = userName => {
+const getDisqusScript = userName => {
   const script = document.createElement('script')
   script.src = `//${userName}.disqus.com/embed.js`
   script.async = true
 
-  document.body.appendChild(script)
+  return script
 }
 
-loadDisqus(window.disqusUsername)
+let disqusIsLoaded = false
+
+const loadDisqus = userName => container => () => {
+  if (disqusIsLoaded) {
+    return false
+  }
+
+  const viewportHeight = window.innerHeight
+  const containerPosition = container.getBoundingClientRect().top
+  const containerDistanceToViewport = containerPosition - viewportHeight
+
+  if (containerDistanceToViewport <= viewportHeight) {
+    disqusIsLoaded = true
+    document.body.appendChild(getDisqusScript(userName))
+  }
+}
+
+const throttle = (fn, limit) => {
+  let wait = false
+
+  return () => {
+    if (!wait) {
+      fn.call()
+      wait = true
+      setTimeout(() => {
+        wait = false
+      }, limit)
+    }
+  }
+}
+
+const disqusContainerNode = document.getElementById('disqus_thread')
+const disqus = loadDisqus(window.disqusUsername)(disqusContainerNode)
+
+if (window.disqusUsername) {
+  window.addEventListener('scroll', throttle(disqus, 300))
+  disqus()
+}
