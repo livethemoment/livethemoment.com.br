@@ -1,4 +1,0 @@
----
-title: 'Entretenimento'
-layout: home
----

@@ -1,4 +1,0 @@
----
-title: 'Tutoriais'
-layout: home
----
