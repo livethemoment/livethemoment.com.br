@@ -1,22 +1,15 @@
 
-# Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
-
 # Permalinks
-permalink:           /:title
-relative_permalinks: true
+permalink: /:title
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
-url:                 site url
-rss:                 rss feed url
-baseurl:             '/'
+name: Live the moment
+title: Live the moment
+tagline: 'tagline'
+description: 'Blog de entretenimento que ajuda você a viver o momento'
+url: http://livethemoment.com.br/
+rss: http://livethemoment.com.br/feed.xml
+baseurl: '/'
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
@@ -31,12 +24,7 @@ author:
   twitter:           username
   google_plus:       username
   linkedin:          username
-  dribbble:          username
   pinterest:         username
-  kiva:              username
-
-fb_admins:           your facebook profile id
-fb_appid:            your facebook app id
 
 # Server
 destination:      	 ./_site
