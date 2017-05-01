@@ -6,7 +6,7 @@ permalink: /:title
 name: Live the moment
 title: Live the moment
 tagline: 'tagline'
-description: 'Blog de entretenimento que ajuda você a viver o momento'
+description: 'Descubra lugares. Viva cada momento.'
 url: http://livethemoment.com.br/
 rss: http://livethemoment.com.br/feed.xml
 baseurl: '/'
@@ -15,16 +15,16 @@ baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
 baseurl_javascripts: '/assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
-disqus:              disqus_shortname # get it on https://disqus.com/admin/
+disqus:              http://disqus.com/by/livethe_moment  # get it on https://disqus.com/admin/
 
 author:
-  name:           	 your name
-  url:            	 your site url
-  facebook:          username
-  twitter:           username
-  google_plus:       username
-  linkedin:          username
-  pinterest:         username
+  name:           	 Thaise Martins
+  url:            	 www.livethemoment.com.br
+ # facebook:          username
+ # twitter:           username
+ # google_plus:       username
+ # linkedin:          username
+ # pinterest:         username
 
 # Server
 destination:      	 ./_site
