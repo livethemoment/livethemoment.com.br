@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Primeiro Post"
-comments: true
+comments: false
 date:   2017-05-11 01:00:00
 last_modified_at:  2017-05-11 01:00:00
 excerpt: "Teste 01"
